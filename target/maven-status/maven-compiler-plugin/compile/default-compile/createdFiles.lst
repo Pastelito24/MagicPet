@@ -1,0 +1,4 @@
+servlets\PruebaServlet.class
+beans\User.class
+beans\Adoptation.class
+beans\Pets.class
