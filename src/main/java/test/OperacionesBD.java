@@ -8,8 +8,8 @@ import java.sql.Statement;
 
 public class OperacionesBD {
     public static void main(String[] args) {
-       //listarPets();
-        actualizarPets(1, "Danna");
+       listarPets();
+        //actualizarPets(1, "Danna");
     }
     
     public static void actualizarPets(int id_pet, String name_pet) {

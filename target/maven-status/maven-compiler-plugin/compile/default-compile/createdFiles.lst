@@ -1,4 +1,8 @@
-servlets\PruebaServlet.class
 beans\User.class
+controller\UsuarioController.class
+controller\IUsuarioController.class
+servlets\PruebaServlet.class
+test\OperacionesBD.class
 beans\Adoptation.class
 beans\Pets.class
+connection\DBConnection.class

@@ -70,5 +70,9 @@ public class User {
     public String toString() {
         return "User{" + "user_id=" + user_id + ", user_password=" + user_password + ", user_name=" + user_name + ", last_name=" + last_name + ", email=" + email + ", location=" + location + '}';
     }
+
+
+
     
+
 }
