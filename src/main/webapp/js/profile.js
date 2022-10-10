@@ -1,15 +1,14 @@
-var user_id = new URL(location.href).searchParams.get("user_id");
+var user_id = new URL(location.href).searchParams.get("id");
 var user;
 
 $(document).ready(function () {
 
 
     fillUsuario().then(function () {
-
-        getAlquiladas(user.username);
+        // getPets(user.username);
     });
 
-    $("#reservar-btn").attr("href", `home.html?username=${user_id}`);
+    $("#reservar-btn").attr("href", `home.html?user-id=${user_id}`);
 
     $("#form-modificar").on("submit", function (event) {
 
@@ -20,7 +19,7 @@ $(document).ready(function () {
     $("#aceptar-eliminar-cuenta-btn").click(function () {
 
         eliminarCuenta().then(function () {
-            location.href = "index.html";
+            location.href = "index.html?del-usuario=1";
         })
     })
 
@@ -32,7 +31,7 @@ async function fillUsuario() {
         dataType: "html",
         url: "./ServletUsuarioPedir",
         data: $.param({
-            user_id: user_id,
+            id: user_id,
         }),
         success: function (result) {
             let parsedResult = JSON.parse(result);
@@ -55,9 +54,7 @@ async function fillUsuario() {
     });
 }
 
-function getAlquiladas(user_id) {
-
-
+function getPets(user_id) {
     $.ajax({
         type: "GET",
         dataType: "html",
@@ -89,8 +86,8 @@ function modificarUsuario() {
     let email = $("#input-email").val();
     let location_user = $("#input-location_user").val();
     $.ajax({
-        type: "GET",
-        dataType: "html",
+        type: "POST",
+        dataType: "json",
         url: "./ServletUsuarioModificar",
         data: $.param({
             user_id: user_id,
@@ -123,11 +120,11 @@ function modificarUsuario() {
 async function eliminarCuenta() {
 
     await $.ajax({
-        type: "GET",
+        type: "POST",
         dataType: "html",
         url: "./ServletUsuarioEliminar",
         data: $.param({
-            user_id: user_id
+            id: user_id
         }),
         success: function (result) {
 

@@ -1,3 +1,5 @@
+var delUsuario = new URL(location.href).searchParams.get("del-usuario");
+
 $(document).ready(function () {
 
     $("#form-login").submit(function (event) {
@@ -11,7 +13,11 @@ $(document).ready(function () {
         event.preventDefault();
         registrarUsuario();
     });
-
+    
+    if(delUsuario){
+        alert("Estimado usuario: La eliminación de su cuenta fue un éxito.")
+        window.location = window.location.href.split("?")[0]
+    }
 
 });
 
@@ -33,7 +39,7 @@ function autenticarUsuario() {
             if (parsedResult != false) {
                 $("#login-error").addClass("d-none");
                 let user_id = parsedResult['user_id'];
-                document.location.href = "home.html?username=" + user_id;
+                document.location.href = "home.html?id=" + user_id;
             } else {
                 $("#login-error").removeClass("d-none");
             }
@@ -50,7 +56,8 @@ function registrarUsuario() {
     let email = $("#input-email").val();
     let location_user = $("#input-location_user").val();
     
-
+    
+    
     if (user_password == user_passwordConfirmacion) {
 
         $.ajax({
@@ -65,6 +72,7 @@ function registrarUsuario() {
                 email: email,
                 location_user: location_user
                 
+                              
             }),
             success: function (result) {
                 let parsedResult = JSON.parse(result);
@@ -72,7 +80,7 @@ function registrarUsuario() {
                 if (parsedResult != false) {
                     $("#register-error").addClass("d-none");
                     let user_id = parsedResult['user_id'];
-                    document.location.href = "home.html?username=" + user_id;
+                    document.location.href = "home.html?id=" + user_id;
                 } else {
                     $("#register-error").removeClass("d-none");
                     $("#register-error").html("Error en el registro del usuario");

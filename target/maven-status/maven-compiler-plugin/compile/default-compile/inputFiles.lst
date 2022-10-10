@@ -1,9 +1,13 @@
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\PruebaServlet.java
-C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\beans\Adoptation.java
-C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\beans\Pets.java
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\beans\User.java
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\controller\UsuarioController.java
-C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\controller\IUsuarioController.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\ServletUsuarioPedir.java
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\connection\DBConnection.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\ServletUsuarioModificar.java
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\ServletUsuarioLogin.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\beans\Adoptation.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\beans\Pets.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\controller\IUsuarioController.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\ServletUsuarioRegister.java
 C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\test\OperacionesBD.java
+C:\Users\FALUMA\Desktop\proyectoJDBC\MagicPet\src\main\java\servlets\ServletUsuarioEliminar.java

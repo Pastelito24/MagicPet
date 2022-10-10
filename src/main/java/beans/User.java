@@ -1,21 +1,21 @@
-
 package beans;
 
 public class User {
+
     private int user_id;
     private String user_password;
     private String user_name;
     private String last_name;
     private String email;
-    private String location;
+    private String location_user;
 
-    public User(int user_id, String user_password, String user_name, String last_name, String email, String location) {
+    public User(int user_id, String user_password, String user_name, String last_name, String email, String location_user) {
         this.user_id = user_id;
         this.user_password = user_password;
         this.user_name = user_name;
         this.last_name = last_name;
         this.email = email;
-        this.location = location;
+        this.location_user = location_user;
     }
 
     public int getUser_id() {
@@ -58,21 +58,17 @@ public class User {
         this.email = email;
     }
 
-    public String getLocation() {
-        return location;
+    public String getLocation_user() {
+        return location_user;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocation_user(String location_user) {
+        this.location_user = location_user;
     }
 
     @Override
     public String toString() {
-        return "User{" + "user_id=" + user_id + ", user_password=" + user_password + ", user_name=" + user_name + ", last_name=" + last_name + ", email=" + email + ", location=" + location + '}';
+        return "User{" + "user_id=" + user_id + ", user_password=" + user_password + ", user_name=" + user_name + ", last_name=" + last_name + ", email=" + email + ", location_user=" + location_user + '}';
     }
-
-
-
-    
 
 }
