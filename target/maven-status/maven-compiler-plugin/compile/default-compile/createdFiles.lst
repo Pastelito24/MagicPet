@@ -1,8 +1,13 @@
-beans\User.class
-controller\UsuarioController.class
+servlets\ServletUsuarioPedir.class
 controller\IUsuarioController.class
 servlets\PruebaServlet.class
+servlets\ServletUsuarioRegister.class
+beans\User.class
+controller\UsuarioController.class
+servlets\ServletUsuarioModificar.class
+servlets\ServletUsuarioEliminar.class
 test\OperacionesBD.class
 beans\Adoptation.class
+servlets\ServletUsuarioLogin.class
 beans\Pets.class
 connection\DBConnection.class

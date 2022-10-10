@@ -1,68 +1,463 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<html lang="en">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <title>MagicPet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-              integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-              crossorigin="anonymous" />
-
-        <script src="js/main.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+          <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/main.css" />
-        <title>Inicio</title>
-    </head>
-    <body>
+  <!-- =======================================================
+  * Template Name: eStartup - v4.9.1
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Inicio</a>
-            <div id="user-data-profile">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span id="ajustes">Ajustes </span>
-                    </button>
-                    <div class="dropdown-menu" id="main-menu">
-                        <a id="mi-perfil-btn" class="dropdown-item">Mi perfil</a>
-                        <a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html"><span>Magic</span>Pet</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#mascotas">Mascotas</a></li>
+          <li><a class="nav-link scrollto" href="#screenshots">Galeria</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <ul>
+            <li class="dropdown"><a href="#"><span>Ajustes</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li> <a id="mi-perfil-btn" class="dropdown-item" >Mi perfil</a></li>                
+                  <li ><a id="salir-btn" class="dropdown-item" href="index.html">Salir </a></li>             
+              </ul>
+          </ul>
+          <div class="dropdown-menu" id="main-menu">
+            <a id="mi-perfil-btn" class="dropdown-item" href="profile.html">Mi perfil</a>
+            <a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>
+          </div>
+        
+        <i class="bi bi-list mobile-nav-toggle"></i>
+         </ul>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>¡Empieza a Adoptar!</h1>
+      <img src="https://i.ibb.co/z84jZnw/lindo-perro-pug-sosteniendo-bebe-gato-dibujos-animados-vector-icono-ilustracion-animal-naturaleza-ic.png"  alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+      <a href="#mascotas" class="btn-get-started scrollto">Adoptar</a>
+      <div class="btns">
+
+    </div>
+  </section>
+
+  <section id="mascotas" class="padd-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">Mascotas disponibles </h3>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-green mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://http2.mlstatic.com/D_NQ_NP_623086-MCO48898702305_012022-V.jpg"> 
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title">Danna</h4>
+                                            <p class="card-text">Me llamo dana tengo 8 meses y busco una familia cariñosa, soy muy calmada y me gusta jugar.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://www.fanaticosdelasmascotas.cl/wp-content/uploads/2019/10/Shih-tzu-03.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Katy</h4>
+                                            <p class="card-text">Me llamo Katy tengo 1 año y busco familia, soy muy juguetona :).</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_noticia__small/public/media/2022/02/17/dia_internacional_gato_p.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Spoky</h4>
+                                            <p class="card-text">Me llamo Spoky tengo 8 meses y busco familia tranquila.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://estaticos-cdn.prensaiberica.es/clip/9095c520-705e-4729-895d-4bab386af4fc_16-9-discover-aspect-ratio_default_0.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Simba</h4>
+                                            <p class="card-text">Me llamo simba tengo 3 meses y busco familia.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://static01.nyt.com/images/2019/09/04/business/06GatoClon01/merlin_160087014_de761d9a-4360-402d-a15b-ddeff775760d-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Eren</h4>
+                                            <p class="card-text">Me llamo Eren tengo 1 año y 2 meses y busco familia activa.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://static.wixstatic.com/media/3d48f3_a06079734f9e4d11b1f7e91e030ee72d~mv2.jpg/v1/fill/w_2500,h_2132,al_c/3d48f3_a06079734f9e4d11b1f7e91e030ee72d~mv2.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Coco</h4>
+                                            <p class="card-text">Soy coco tengo 8 meses y busco familia.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://cdn.pixabay.com/photo/2017/09/02/08/49/golden-retriever-puppy-2706655_960_720.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Zeus</h4>
+                                            <p class="card-text">Soy zeus tengo 4 meses y busco familia.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://www.superpet.ec/wp-content/uploads/2021/06/husky-2.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Luna</h4>
+                                            <p class="card-text">Soy luna tengo 6 meses y busco familia.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://i0.wp.com/mascooriente.co/wp-content/uploads/2020/02/mascooriente_pomerania.jpg?fit=520%2C355&ssl=1">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Kedama</h4>
+                                            <p class="card-text">Soy Kedama tengo 1 año y 4 meses y busco familia cariñosa.</p>
+                                            <div class="text-center">
+                                              <a class="btn btn-green mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                Adoptar
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <main class="p-4 d-flex justify-content-center">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Nombre provisional</th>   
-                        <th scope="col">Raza</th>
-                        <th scope="col">Peso</th>
-                        <th scope="col">Vacunas Aplicadas</th>
-                        <th scope="col">Esterilizado</th>                        
-                        <th scope="col" id="ordenar-data_pet" data-toogle="tooltip" 
-                            data-placement="top" title="Ordenar por adopcion">Adoptado
-                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
-                        <th scope="col">Adoptar</th>
-                    </tr>
-                </thead>
-                <tbody id="pet-tbody">
+        </div>
+    </div>
+</section>
 
-                </tbody>
-            </table>
-        </main>
+  <main id="main">
+    <!-- ======= Screenshots Section ======= -->
+    <section id="screenshots" class="padd-section text-center">
 
-    </body>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Galeria</h2>
+          <p class="separator">Mascotas adoptadas</p>
+        </div>
+
+        <div class="screens-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="https://www.rover.com/blog/wp-content/uploads/2015/02/woman-dog.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://www.prensalibre.com/wp-content/uploads/2019/09/Perro-adoptado-2.jpg?quality=82&w=1024" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://static3.ideal.es/www/multimedia/202207/06/media/cortadas/sopa-aitana3-kdLE-U170640760677pKF-624x385@Ideal.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://www.huellascallejeras.com/wp-content/uploads/2018/04/gatos-adoptado-adaptacion7.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/TOVGYVKCVFBQLE2ANKGDJYRC64.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://www.zoorprendente.com/wp-content/uploads/2022/02/gato-naranja-2-500x539.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNLSXfT6Bun1Ayc-DwjlltM7u_Vdwo78sjM5J-yV8jXZyRBQ1-XArc3Ycpbogy21BlNHI&usqp=CAU" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://animales.saraprotectora.org/media/animales/Miel_.jpeg" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Screenshots Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="padd-section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Contacto</h2>
+          <p class="separator">¿Tienes algun problema/duda? ¡Contactanos!</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>CR108 Adam Street<br>Bogota, BG 124912</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <p>magicpet@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+3166125235</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-lg-4">
+          <div class="footer-logo">
+
+            <a class="navbar-brand" href="#">MagicPet</a>
+
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Support</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">faq</a></li>
+              <li><a href="#">Editor help</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights eStartup. All rights reserved.</p>
+        <div class="credits">
+          <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+        -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
